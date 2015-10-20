@@ -11,7 +11,9 @@
 #import "Movie.h"
 #import "DetailViewController.h"
 
-@interface ViewController () <UICollectionViewDataSource, UIBarPositioningDelegate>
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+
+//UIBarPositioningDelegate?? Why did I have this?
 
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -57,39 +59,39 @@
                     //This was what was necessary to change the regular resolution picutre to the high resolution picture!!!! Thanks Ken for the suggestion!!!
                     
                     
-                    NSArray *stringParts = [imageString componentsSeparatedByString:@"/"];
-                    
-                    NSInteger startPoint = [stringParts indexOfObject:@"dkpu1ddg7pbsk.cloudfront.net"];
-                    
-                    NSLog(@" starting point is %ld", startPoint);
-                    
-                    NSInteger arraySize = stringParts.count;
-                    
-                    NSLog(@" count is %ld", arraySize);
-                    
-                    NSRange range = NSMakeRange(startPoint, arraySize-startPoint);
-                    
-                    NSArray *newArray = [stringParts subarrayWithRange:range];
-                    
-                    
-                    NSString *shortImageString = [newArray componentsJoinedByString:@"/"];
-                    
-                    
-                    NSString *prefix =@"https://";
-                    
-                    NSString *highResString = [prefix stringByAppendingString:shortImageString];
-                    
-                    NSLog(@"string is %@", highResString);
-                    
-                    
-                    
+//                    NSArray *stringParts = [imageString componentsSeparatedByString:@"/"];
+//                    
+//                    NSInteger startPoint = [stringParts indexOfObject:@"dkpu1ddg7pbsk.cloudfront.net"];
+//                    
+//                    NSLog(@" starting point is %ld", startPoint);
+//                    
+//                    NSInteger arraySize = stringParts.count;
+//                    
+//                    NSLog(@" count is %ld", arraySize);
+//                    
+//                    NSRange range = NSMakeRange(startPoint, arraySize-startPoint);
+//                    
+//                    NSArray *newArray = [stringParts subarrayWithRange:range];
+//                    
+//                    
+//                    NSString *shortImageString = [newArray componentsJoinedByString:@"/"];
+//                    
+//                    
+//                    NSString *prefix =@"https://";
+//                    
+//                    NSString *highResString = [prefix stringByAppendingString:shortImageString];
+//                    
+//                    NSLog(@"string is %@", highResString);
+//                    
                     
                     
                     
                     
                     
                     
-                    NSURL *imageURL = [NSURL URLWithString:highResString];
+                    
+                    
+                    NSURL *imageURL = [NSURL URLWithString:imageString];
                     NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
                     aMovie.movieImage = [UIImage imageWithData:imageData];
                     aMovie.movieTitle = dictionary[@"title"];

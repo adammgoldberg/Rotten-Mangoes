@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "ViewController.h"
+#import "TheatreViewController.h"
 
 @interface DetailViewController ()
 
@@ -26,6 +27,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *review2;
 
 @property (strong, nonatomic) IBOutlet UILabel *review3;
+
+
 
 
 @end
@@ -93,6 +96,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showTheatres"]) {
+        TheatreViewController *tvc = (TheatreViewController*)[segue destinationViewController];
+        tvc.theatreURLString = self.movie.movieTitle;
+
+        
+        
+    }
+    
 }
 
 /*

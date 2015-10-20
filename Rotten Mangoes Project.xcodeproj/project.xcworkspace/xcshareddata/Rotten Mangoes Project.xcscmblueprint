@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CEDAE5870BBC6A1E0DF9DA59CF102C9A05911F0C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CEDAE5870BBC6A1E0DF9DA59CF102C9A05911F0C" : 0,
+    "5AF1E91BDFEE2495E45B8B6FBF2D5170F6AE191A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "17D017A8-8624-4A71-9587-E88DA6954DB6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CEDAE5870BBC6A1E0DF9DA59CF102C9A05911F0C" : "Rotten%20Mangoes%20Project\/",
+    "5AF1E91BDFEE2495E45B8B6FBF2D5170F6AE191A" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Rotten Mangoes Project",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Rotten Mangoes Project.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/adammgoldberg\/Pizza.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5AF1E91BDFEE2495E45B8B6FBF2D5170F6AE191A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/adammgoldberg\/Rotten-Mangoes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CEDAE5870BBC6A1E0DF9DA59CF102C9A05911F0C"
+    }
+  ]
+}
